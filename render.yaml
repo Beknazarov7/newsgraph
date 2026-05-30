@@ -16,12 +16,8 @@ services:
       - key: NEWSGRAPH_ANTHROPIC_API_KEY
         sync: false
       - key: NEWSGRAPH_DB_PATH
-        value: /data/newsgraph.sqlite3
+        value: /tmp/newsgraph.sqlite3
       - key: NEWSGRAPH_CACHE_DIR
-        value: /data/cache
+        value: /tmp/cache
       - key: PYTHON_VERSION
         value: "3.11.9"
-    disk:
-      name: newsgraph-data
-      mountPath: /data
-      sizeGB: 1
