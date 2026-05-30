@@ -1,0 +1,1118 @@
+{
+  "016a92206e93e2d39cb2d6d3eb6cc0759a2d59a2d04601ef796277603bfe599e": {
+    "response": {
+      "correct": true,
+      "reason": "The article is authored by Julie Bort reporting on Sam Altman's offer to Y Combinator startups, and the supporting quote accurately paraphrases content from the article body describing Altman's actions and offer."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/20/sam-altman-makes-mic-drop-offer-to-every-y-combinator-startup/\nPredicted edge: Julie Bort --[reports_on]--> Sam Altman\nExplanation: Julie Bort is the article's author reporting on Sam Altman's offe"
+  },
+  "02ca08c044e235b994d84339b23d83c55b16bb43936afb60f5a7f032dc97cc82": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Greg Brockman",
+          "is_author": false,
+          "role": "OpenAI co-founder and president",
+          "surface_form": "Greg Brockman"
+        },
+        {
+          "canonical_hint": "Fidji Simo",
+          "is_author": false,
+          "role": "CEO of AGI deployment at OpenAI",
+          "surface_form": "Fidji Simo"
+        },
+        {
+          "canonical_hint": "Sam Altman",
+          "is_author": false,
+          "role": "CEO of OpenAI",
+          "surface_form": "Sam Altman"
+        },
+        {
+          "canonical_hint": "Anthony Ha",
+          "is_author": true,
+          "role": "journalist",
+          "surface_form": "Anthony Ha"
+        }
+      ],
+      "relationships": [
+        {
+          "explanation": "Anthony Ha, as the article's author, reports on Greg Brockman taking charge of product strategy.",
+          "source": "Anthony Ha",
+          "supporting_quote": "OpenAI co-founder and president Greg Brockman is officially taking the reins of the company's product strategy, according to Wired.",
+          "target": "Greg Brockman",
+          "type": "reports_on"
+        },
+        {
+          "explanation": "Greg Brockman, as president, is overseeing product strategy while Fidji Simo is on medical leave, indicating Brockman leads the organization structure that Simo is part of.",
+          "source": "Greg Brockman",
+          "supporting_quote": "Brockman overseeing OpenAI's products on an interim basis while the company's CEO of AGI deployment Fidji Simo is out on medical leave.",
+          "target": "Fidji Simo",
+          "type": "employs"
+        },
+        {
+          "explanation": "Sam Altman, as CEO, formally employs Greg Brockman, the co-founder and president of OpenAI.",
+          "source": "Sam Altman",
+          "supporting_quote": "At the end of last year, CEO Sam Altman declared a 'code red' and said the company needs to refocus on the core ChatGPT experience.",
+          "target": "Greg Brockman",
+          "type": "employs"
+        }
+      ]
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/\nArticle title: OpenAI co-founder Greg Brockman takes charge of product strategy\nByline author(s): Anthony Ha\n\nRelati"
+  },
+  "02fa736148fb1a7683648b60768a2ff7dc04554fb775e110cb41a5e6b30a4a49": {
+    "response": {
+      "correct": false,
+      "reason": "While the article does discuss Musk's lawsuit against Altman and Brockman, characterizing their actions as \"stealing a charity,\" the relationship type \"criticizes\" is too weak and vague to accurately capture a legal action (suing) based on allegations of theft; a more precise relationship type would be needed to correctly represent the adversarial legal relationship."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nPredicted edge: Elon Musk --[criticizes]--> Sam Altman\nExplanation: Musk sued Altman and Brockman, viewing them as having stolen the nonprofit "
+  },
+  "05eeb4b92e902b4669e83003a337f2348a9fe85ff5cf978e5160b411b475d93b": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Elon Musk",
+          "is_author": false,
+          "role": "Co-founder and board member of OpenAI",
+          "surface_form": "Elon Musk"
+        },
+        {
+          "canonical_hint": "Greg Brockman",
+          "is_author": false,
+          "role": "CTO of OpenAI",
+          "surface_form": "Greg Brockman"
+        },
+        {
+          "canonical_hint": "Sam Altman",
+          "is_author": false,
+          "role": "Co-founder of OpenAI",
+          "surface_form": "Sam Altman"
+        },
+        {
+          "canonical_hint": "Ilya Sutskever",
+          "is_author": false,
+          "role": "Head of research at OpenAI",
+          "surface_form": "Ilya Sutskever"
+        },
+        {
+          "canonical_hint": "Shivon Zilis",
+          "is_author": false,
+          "role": "OpenAI advisor",
+          "surface_form": "Shivon Zilis"
+        },
+        {
+          "canonical_hint": "Steve Molo",
+          "is_author": false,
+          "role": "Main trial attorney for Musk",
+          "surface_form": "Steve Molo"
+        },
+        {
+          "canonical_hint": "Tim Fernholz",
+          "is_author": true,
+          "role": "Reporter",
+          "surface_form": "Tim Fernholz"
+        }
+      ],
+      "relationships": [
+        {
+          "explanation": "Tim Fernholz is the article author writing about Greg Brockman's testimony regarding Elon Musk's departure from OpenAI.",
+          "source": "Tim Fernholz",
+          "supporting_quote": "OpenAI president Greg Brockman testified for two days, often referencing a personal journal that offers a rare insight into what it's like to be a 30-year-old tech executive in a pitched battle with Elon Musk.",
+          "target": "Greg Brockman",
+          "type": "reports_on"
+        },
+        {
+          "explanation": "Musk was angry at Brockman and the other founders when they refused to give him full control of the company.",
+          "source": "Elon Musk",
+          "supporting_quote": "When Musk was told the others would not accede to his demand for control of the company, Brockman said he got angry and upset.",
+          "target": "Greg Brockman",
+          "type": "criticizes"
+        },
+        {
+          "explanation": "Musk sued Altman and Brockman, viewing them as having stolen the nonprofit and wronged him.",
+          "source": "Elon Musk",
+          "supporting_quote": "Musk's lawyers are trying to show the court that Altman and Brockman 'stole a charity.'",
+          "target": "Sam Altman",
+          "type": "criticizes"
+        },
+        {
+          "explanation": "Brockman testified that Musk did not understand AI and dismissed early demonstrations of what would become ChatGPT.",
+          "source": "Greg Brockman",
+          "supporting_quote": "Brockman, though, said Musk didn't understand AI. 'He did not and does not know AI,' he testified, describing Musk dismissing an early demonstration of the software that would become ChatGPT.",
+          "target": "Elon Musk",
+          "type": "criticizes"
+        },
+        {
+          "explanation": "Elon Musk left OpenAI's board in February 2018 after the founders refused to give him full control.",
+          "source": "Elon Musk",
+          "supporting_quote": "Musk left the board voluntarily in February 2018, concluding that 'OpenAI is on a path of certain failure,' saying he planned to focus more on AI at Tesla.",
+          "target": "Greg Brockman",
+          "type": "left"
+        },
+        {
+          "explanation": "Musk filed a lawsuit against Altman and Brockman in 2024 based on his suspicions that they got one over on him.",
+          "source": "Elon Musk",
+          "supporting_quote": "And ultimately, those deals fueled Musk's suspicions that Altman and Brockman got one over on him, leading him to file his suit in 2024.",
+          "target": "Sam Altman",
+          "type": "sued"
+        },
+        {
+          "explanation": "Musk filed a lawsuit against Brockman and Altman in 2024 based on his suspicions that they got one over on him.",
+          "source": "Elon Musk",
+          "supporting_quote": "And ultimately, those deals fueled Musk's suspicions that Altman and Brockman got one over on him, leading him to file his suit in 2024.",
+          "target": "Greg Brockman",
+          "type": "sued"
+        },
+        {
+          "explanation": "Brockman and Sutskever worked together to discuss a plan to remove Musk from OpenAI's board and move forward with the organization.",
+          "source": "Greg Brockman",
+          "supporting_quote": "Brockman and Sutskever discussed a plan to kick Elon off OpenAI's board in order to move forward, resulting in November 2017 journal entries that Musk's lawyers have focused on.",
+          "target": "Ilya Sutskever",
+          "type": "partners_with"
+        },
+        {
+          "explanation": "Shivon Zilis acted as a go-between for Musk and the OpenAI team during negotiations.",
+          "source": "Shivon Zilis",
+          "supporting_quote": "Shivon Zilis, an OpenAI advisor who acted as a go-between for Musk and the team there, said there were more than 20 variations on the plan.",
+          "target": "Elon Musk",
+          "type": "partners_with"
+        }
+      ]
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nArticle title: How Elon Musk left OpenAI, according to Greg Brockman\nByline author(s): Tim Fernholz\n\nRelationship vocabulary:\n  - criticize"
+  },
+  "13e05c8b130ed43e84a1ded8f366e2417db0847d6f2dcb6f4d9fe9eff30b79fe": {
+    "response": {
+      "correct": true,
+      "reason": "The predicted edge is correct: Elon Musk did sue Sam Altman (and other OpenAI co-founders), the relationship type \"sued\" accurately matches the lawsuit described in the article, the supporting quote appears in the article content, and the direction is accurate (Musk as plaintiff suing Altman as defendant)."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/\nPredicted edge: Elon Musk --[sued]--> Sam Altman\nExplanation: Elon Musk is suing Sam Altman and other OpenAI co-founders.\n"
+  },
+  "1c39f5ce40705437d725346c83c9b9ce52371a0af052fc12ef9196a717fd9a56": {
+    "response": {
+      "correct": false,
+      "reason": "The supporting quote only mentions Sam Altman as someone involved with Cerebras but does not establish that Julie Bort is reporting on Sam Altman specifically\u2014it merely lists him as one among several people mentioned in the article."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/\nPredicted edge: Julie Bort --[reports_on]--> Sam Altman\nExplanation: Julie Bort is the article author reporting on Sam Altman and hi"
+  },
+  "1f38a63eb58acf6a80ee431dbe53becf2f2a298f45c8544f263366c38776c17b": {
+    "response": {
+      "correct": true,
+      "reason": "The predicted relationship is correct: Tasha McCauley (as a former board member) testified that Altman misled her and referenced toxic culture, which constitutes criticism of Altman, and the supporting quote directly supports this assertion from the article."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/13/who-trusts-sam-altman/\nPredicted edge: Tasha McCauley --[criticizes]--> Sam Altman\nExplanation: Tasha McCauley, a former OpenAI board member, testified that Altman had misled her and referenced a t"
+  },
+  "20ee753e256b9a656d30499c74bc63fd0941e533a653a2f1211f0b82da5ca7a1": {
+    "response": {
+      "correct": false,
+      "reason": "The predicted edge claims Musk criticizes Brockman, but the supporting quote only states that Musk \"got angry and upset\" when denied control\u2014this describes Musk's emotional reaction rather than him criticizing Brockman, and the quote does not establish a direct criticism of Brockman by Musk."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nPredicted edge: Elon Musk --[criticizes]--> Greg Brockman\nExplanation: Musk was angry at Brockman and the other founders when they refused to g"
+  },
+  "22091e20a8cc71048b19cd870cbdad9831c082eaaa7c2e5851ed6f9c0ed2ed01": {
+    "response": {
+      "correct": true,
+      "reason": "The predicted edge correctly identifies that Russell Brandom (the article's author) reports on Ara Kharazian's analysis, with the supporting quote accurately appearing in the article and directly supporting the relationship type."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/\nPredicted edge: Russell Brandom --[reports_on]--> Ara Kharazian\nExplanation: Russell Brandom, the article's author, rep"
+  },
+  "2dedc499689c00608e7ebd297d85d852166eaab7d2b0adf8243a70ac559e909c": {
+    "response": {
+      "correct": true,
+      "reason": "Tim Fernholz authored an article reporting on the lawsuit case between Elon Musk and Sam Altman, which establishes a reports_on relationship from the author to the subject of reporting."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/\nPredicted edge: Tim Fernholz --[reports_on]--> Elon Musk\nExplanation: Tim Fernholz is the article author writing about Elo"
+  },
+  "39151caa828ab84eb61ed6aa8d3897b8d7285b2a5e60289a5b1b658f81c4f6ca": {
+    "response": {
+      "correct": true,
+      "reason": "The article is authored by Tim Fernholz and discusses Sam Altman's credibility and congressional testimony, making the reports_on relationship accurate and the supporting quote appropriately captures Altman's testimony that Fernholz reports on."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/13/who-trusts-sam-altman/\nPredicted edge: Tim Fernholz --[reports_on]--> Sam Altman\nExplanation: Tim Fernholz is the article's author, writing about Sam Altman and his credibility and testimony.\nSuppo"
+  },
+  "39e8869a1338b4a2ef2c707375be3f7c25c8f8fe45941e7392e2c33d4232dc0e": {
+    "response": {
+      "correct": false,
+      "reason": "The supporting quote shows Steve Molo questioning Altman's disclosures, which is cross-examination rather than criticism of Altman himself, and the quote does not actually appear to come from the referenced TechCrunch article URL (which cannot be verified as accessible)."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/13/who-trusts-sam-altman/\nPredicted edge: Steve Molo --[criticizes]--> Sam Altman\nExplanation: Steve Molo, the attorney for Elon Musk, aggressively questioned Altman's credibility and accuracy of his "
+  },
+  "3e1c8d7891582e65ff022a7403dd7b3346ff7f00524166ac4556933405ffd898": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Sam Altman",
+          "is_author": false,
+          "role": "CEO of OpenAI",
+          "surface_form": "Sam Altman"
+        },
+        {
+          "canonical_hint": "John Kennedy",
+          "is_author": false,
+          "role": "Senator from Louisiana",
+          "surface_form": "Senator John Kennedy"
+        },
+        {
+          "canonical_hint": "Steve Molo",
+          "is_author": false,
+          "role": "Attorney leading Elon Musk's effort to shut down OpenAI's for-profit business",
+          "surface_form": "Steve Molo"
+        },
+        {
+          "canonical_hint": "Elon Musk",
+          "is_author": false,
+          "role": null,
+          "surface_form": "Elon Musk"
+        },
+        {
+          "canonical_hint": "Greg Brockman",
+          "is_author": false,
+          "role": "OpenAI president",
+          "surface_form": "Greg Brockman"
+        },
+        {
+          "canonical_hint": "Helen Toner",
+          "is_author": false,
+          "role": "former OpenAI board member",
+          "surface_form": "Helen Toner"
+        },
+        {
+          "canonical_hint": "Tasha McCauley",
+          "is_author": false,
+          "role": "former OpenAI board member",
+          "surface_form": "Tasha McCauley"
+        },
+        {
+          "canonical_hint": "Ilya Sutskever",
+          "is_author": false,
+          "role": "OpenAI co-founder",
+          "surface_form": "Ilya Sutskever"
+        },
+        {
+          "canonical_hint": "Yvonne Gonzalez Rogers",
+          "is_author": false,
+          "role": "Judge",
+          "surface_form": "Judge Yvonne Gonzalez Rogers"
+        },
+        {
+          "canonical_hint": "Satya Nadella",
+          "is_author": false,
+          "role": "CEO of Microsoft",
+          "surface_form": "Satya Nadella"
+        },
+        {
+          "canonical_hint": "Bret Taylor",
+          "is_author": false,
+          "role": "Chair of OpenAI's board",
+          "surface_form": "Bret Taylor"
+        },
+        {
+          "canonical_hint": "Zico Kolter",
+          "is_author": false,
+          "role": "OpenAI board member focused on AI safety",
+          "surface_form": "Dr. Zico Kolter"
+        },
+        {
+          "canonical_hint": "Tim Fernholz",
+          "is_author": true,
+          "role": "reporter",
+          "surface_form": "Tim Fernholz"
+        }
+      ],
+      "relationships": [
+        {
+          "explanation": "Tim Fernholz is the article's author, writing about Sam Altman and his credibility and testimony.",
+          "source": "Tim Fernholz",
+          "supporting_quote": "In May 2023, OpenAI CEO Sam Altman was sworn in and testified before Congress about the regulation of artificial intelligence.",
+          "target": "Sam Altman",
+          "type": "reports_on"
+        },
+        {
+          "explanation": "Steve Molo, the attorney for Elon Musk, aggressively questioned Altman's credibility and accuracy of his statements during the testimony.",
+          "source": "Steve Molo",
+          "supporting_quote": "\"You didn't disclose to the United States Senate that you had an interest in OpenAI through a share in a Y Combinator fund, did you?\" barked Steve Molo",
+          "target": "Sam Altman",
+          "type": "criticizes"
+        },
+        {
+          "explanation": "Helen Toner, a former OpenAI board member, testified under oath accusing Altman of misleading her.",
+          "source": "Helen Toner",
+          "supporting_quote": "Then-board members Toner and McCauley testified that Altman had misled them, with McCauley referring to \"a toxic culture of lying.\"",
+          "target": "Sam Altman",
+          "type": "criticizes"
+        },
+        {
+          "explanation": "Tasha McCauley, a former OpenAI board member, testified that Altman had misled her and referenced a toxic culture of lying.",
+          "source": "Tasha McCauley",
+          "supporting_quote": "Then-board members Toner and McCauley testified that Altman had misled them, with McCauley referring to \"a toxic culture of lying.\"",
+          "target": "Sam Altman",
+          "type": "criticizes"
+        },
+        {
+          "explanation": "Elon Musk brought accusations against Altman of lying and misleading in his lawsuit to shut down OpenAI's for-profit business.",
+          "source": "Elon Musk",
+          "supporting_quote": "Molo ran through a litany of people who accused Altman of lying or misleading them \u2014 including accusations made under oath in the courtroom by former OpenAI board members Helen Toner and Tasha McCauley, Elon Musk, and OpenAI co-founder Ilya Sutskever.",
+          "target": "Sam Altman",
+          "type": "criticizes"
+        },
+        {
+          "explanation": "Ilya Sutskever, OpenAI co-founder, made accusations under oath that Altman had lied or misled.",
+          "source": "Ilya Sutskever",
+          "supporting_quote": "Molo ran through a litany of people who accused Altman of lying or misleading them \u2014 including accusations made under oath in the courtroom by former OpenAI board members Helen Toner and Tasha McCauley, Elon Musk, and OpenAI co-founder Ilya Sutskever.",
+          "target": "Sam Altman",
+          "type": "criticizes"
+        },
+        {
+          "explanation": "Satya Nadella, Microsoft CEO, called Altman's firing 'amateur city,' implying criticism of the board's decision rather than Altman.",
+          "source": "Satya Nadella",
+          "supporting_quote": "Microsoft CEO Satya Nadella called Altman's firing \"amateur city.\"",
+          "target": "Sam Altman",
+          "type": "praises"
+        },
+        {
+          "explanation": "Bret Taylor, chair of OpenAI's board, testified that Altman has been forthright with him and found nothing that warranted his termination.",
+          "source": "Bret Taylor",
+          "supporting_quote": "Bret Taylor, who joined OpenAI's board as chair in the wake of Altman's rehiring, said he found nothing that warranted his termination and that Altman has been \"forthright with me.\"",
+          "target": "Sam Altman",
+          "type": "praises"
+        }
+      ]
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/13/who-trusts-sam-altman/\nArticle title: Who trusts Sam Altman?\nByline author(s): Tim Fernholz\n\nRelationship vocabulary:\n  - criticizes: A publicly criticizes B (named criticism, not vague disagre"
+  },
+  "4c616862d25261e8d19003ca8862376b8799f3fb0054d94bc8da1e21c2d09665": {
+    "response": {
+      "correct": false,
+      "reason": "The supporting quote indicates that Wired is reporting on Greg Brockman, not Anthony Ha; Anthony Ha (as TechCrunch author) is reporting on Wired's reporting, making the direction incorrect for a direct \"reports_on\" relationship."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/\nPredicted edge: Anthony Ha --[reports_on]--> Greg Brockman\nExplanation: Anthony Ha, as the article's author, reports on "
+  },
+  "513b1cb240ddb969aabe134b270738682ebbe24c34f6b490a546014c429fca79": {
+    "response": {
+      "correct": true,
+      "reason": "The article is by Tim Fernholz reporting on Sam Altman's testimony, the supporting quote accurately appears in the article body and directly supports the reporting relationship, and the direction (Tim Fernholz as source/author reporting on Sam Altman as target/subject) is correct."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/\nPredicted edge: Tim Fernholz --[reports_on]--> Sam Altman\nExplanation: Tim Fernholz is the article author reporting on Sam Altman's test"
+  },
+  "5e855d71dceb246850b695538553a66136ff0ed8f7f700ea83451a3fef3b2e46": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Sam Altman",
+          "is_author": false,
+          "role": "CEO of OpenAI, former head of Y Combinator",
+          "surface_form": "Sam Altman"
+        },
+        {
+          "canonical_hint": "Tyler Bosmeny",
+          "is_author": false,
+          "role": "Y Combinator partner",
+          "surface_form": "Tyler Bosmeny"
+        },
+        {
+          "canonical_hint": "Jared Friedman",
+          "is_author": false,
+          "role": "Y Combinator managing director",
+          "surface_form": "Jared Friedman"
+        },
+        {
+          "canonical_hint": "Jason Calacanis",
+          "is_author": false,
+          "role": "seed investor with competing accelerator and fund",
+          "surface_form": "Jason Calacanis"
+        },
+        {
+          "canonical_hint": "Julie Bort",
+          "is_author": true,
+          "role": "journalist",
+          "surface_form": "Julie Bort"
+        }
+      ],
+      "relationships": [
+        {
+          "explanation": "Julie Bort is the article's author reporting on Sam Altman's offer to Y Combinator startups.",
+          "source": "Julie Bort",
+          "supporting_quote": "During a Y Combinator event on Tuesday night, Sam Altman had what YC partner Tyler Bosmeny called a \"mic drop moment.\" Altman offered $2 million worth of OpenAI tokens to every startup in the current class in exchange for equity in the startup.",
+          "target": "Sam Altman",
+          "type": "reports_on"
+        },
+        {
+          "explanation": "Jason Calacanis warns against the deal Altman is offering, expressing concern about OpenAI's potential to copy startup ideas.",
+          "source": "Jason Calacanis",
+          "supporting_quote": "\"If you take these tokens, there's a non-zero chance that OpenAI will study exactly what your startup is doing, copy your idea and put your app into their free offering. This is the classic platform playbook \u2014 be careful, founders!\" he posted.",
+          "target": "Sam Altman",
+          "type": "criticizes"
+        }
+      ]
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/20/sam-altman-makes-mic-drop-offer-to-every-y-combinator-startup/\nArticle title: Sam Altman makes \u2018mic drop\u2019 offer to every Y Combinator startup\nByline author(s): Julie Bort\n\nRelationship vocabula"
+  },
+  "5f0ef90912af1d59efd277439a6a1e5d889dc914e614c6eda7e20d66ed67c896": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Ivan Mehta",
+          "is_author": true,
+          "role": "journalist",
+          "surface_form": "Ivan Mehta"
+        }
+      ],
+      "relationships": []
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/\nArticle title: OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT\nByline author(s): Ivan Mehta\n\nRelationship vocab"
+  },
+  "6620ba46e66d3a305b75a72a2f925c04c8fe4e1f6b55ff75b1dac27d33a6b194": {
+    "response": {
+      "correct": true,
+      "reason": "Tim Fernholz is identified as a TechCrunch reporter covering the trial involving Elon Musk, and the supporting quote directly confirms he is reporting on the trial related to Elon Musk."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/04/elon-musk-sent-ominous-texts-to-greg-brockman-sam-altman-after-asking-for-a-settlement-openai-claims/\nPredicted edge: Tim Fernholz --[reports_on]--> Elon Musk\nExplanation: Tim Fernholz is a reporte"
+  },
+  "66e4b111c2c946620f0b27f9ab7d5766bd410ba841fc646671c7840d639166e5": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Russell Brandom",
+          "is_author": true,
+          "role": "journalist",
+          "surface_form": "Russell Brandom"
+        },
+        {
+          "canonical_hint": "Ara Kharazian",
+          "is_author": false,
+          "role": "Ramp economist",
+          "surface_form": "Ara Kharazian"
+        }
+      ],
+      "relationships": [
+        {
+          "explanation": "Russell Brandom, the article's author, reports on and quotes Ara Kharazian's analysis and statements about Anthropic and OpenAI.",
+          "source": "Russell Brandom",
+          "supporting_quote": "\"Anthropic has already been in the lead amongst the high adoption groups like finance, tech, professional services,\" Ramp economist Ara Kharazian told TechCrunch.",
+          "target": "Ara Kharazian",
+          "type": "reports_on"
+        }
+      ]
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/\nArticle title: Anthropic now has more business customers than OpenAI, according to Ramp data\nByline author(s): Russ"
+  },
+  "694a6eaa73651e9c859d74df25f9ea0cf20b360f325b9bb8a44febf8d538cd0f": {
+    "response": {
+      "correct": true,
+      "reason": "The supporting quote directly confirms that Ilya Sutskever, OpenAI co-founder, made accusations under oath that Altman lied or misled, which constitutes criticism of Altman, making the criticizes relationship both factually accurate and properly directed."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/13/who-trusts-sam-altman/\nPredicted edge: Ilya Sutskever --[criticizes]--> Sam Altman\nExplanation: Ilya Sutskever, OpenAI co-founder, made accusations under oath that Altman had lied or misled.\nSuppor"
+  },
+  "6b515b10e226d19cceb67ec5fcd679fbc9c6e8f4777f3c893967b5393eb5699e": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Sam Altman",
+          "is_author": false,
+          "role": "CEO of OpenAI",
+          "surface_form": "Sam Altman"
+        },
+        {
+          "canonical_hint": "Elon Musk",
+          "is_author": false,
+          "role": "former co-founder of OpenAI",
+          "surface_form": "Elon Musk"
+        },
+        {
+          "canonical_hint": "Bret Taylor",
+          "is_author": false,
+          "role": "OpenAI board chair",
+          "surface_form": "Bret Taylor"
+        },
+        {
+          "canonical_hint": "Greg Brockman",
+          "is_author": false,
+          "role": "co-founder of OpenAI",
+          "surface_form": "Greg Brockman"
+        },
+        {
+          "canonical_hint": "Ilya Sutskever",
+          "is_author": false,
+          "role": "co-founder of OpenAI",
+          "surface_form": "Ilya Sutskever"
+        },
+        {
+          "canonical_hint": "Tim Fernholz",
+          "is_author": true,
+          "role": "journalist",
+          "surface_form": "Tim Fernholz"
+        }
+      ],
+      "relationships": [
+        {
+          "explanation": "Elon Musk is suing Sam Altman challenging OpenAI's corporate structure.",
+          "source": "Elon Musk",
+          "supporting_quote": "Altman finally took the stand this morning to defend himself against his former co-founder Elon Musk's lawsuit challenging OpenAI's corporate structure.",
+          "target": "Sam Altman",
+          "type": "sued"
+        },
+        {
+          "explanation": "Tim Fernholz is the article author reporting on Sam Altman's testimony in the lawsuit.",
+          "source": "Tim Fernholz",
+          "supporting_quote": "OpenAI CEO Sam Altman finally took the stand this morning to defend himself against his former co-founder Elon Musk's lawsuit challenging OpenAI's corporate structure.",
+          "target": "Sam Altman",
+          "type": "reports_on"
+        },
+        {
+          "explanation": "Altman testified that Musk's management tactics were problematic and that he didn't understand how to run a good research lab.",
+          "source": "Sam Altman",
+          "supporting_quote": "I don't think Mr. Musk understood how to run a good research lab. He had demotivated some of our most key researchers.",
+          "target": "Elon Musk",
+          "type": "criticizes"
+        },
+        {
+          "explanation": "Musk left OpenAI's board and started competing AI initiatives.",
+          "source": "Elon Musk",
+          "supporting_quote": "After that clash went unresolved, Musk ultimately left OpenAI's board and started competing AI initiatives at Tesla and his own AI startup, xAI.",
+          "target": "OpenAI",
+          "type": "left"
+        }
+      ]
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/\nArticle title: Musk mulled handing OpenAI to his children, Altman testifies\nByline author(s): Tim Fernholz\n\nRelationship vocabulary:"
+  },
+  "704dfcc5df6c2c6e49a83f419269f010890634d4607958048dc5f1d8717f6497": {
+    "response": {
+      "correct": true,
+      "reason": "The article's supporting quote explicitly mentions that Elon Musk's case is against OpenAI's co-founders (which includes Greg Brockman), and the relationship type \"sued\" accurately matches the legal action described."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/\nPredicted edge: Elon Musk --[sued]--> Greg Brockman\nExplanation: Elon Musk is suing Greg Brockman as one of OpenAI's co-fo"
+  },
+  "72c248a8c1554ccb58ba0f279996d4149b988e13d965846f44efe7bcaa14b498": {
+    "response": {
+      "correct": true,
+      "reason": "The predicted edge is correct: Jason Calacanis's warning about the risks of OpenAI copying startup ideas and employing a \"platform playbook\" constitutes a valid criticism of Sam Altman's offer, and the supporting quote authentically captures this concern."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/20/sam-altman-makes-mic-drop-offer-to-every-y-combinator-startup/\nPredicted edge: Jason Calacanis --[criticizes]--> Sam Altman\nExplanation: Jason Calacanis warns against the deal Altman is offering, e"
+  },
+  "76e3a81ef4a22e8eb4913a135259cfa24798fc43c233967cbddedcb2f7293bb4": {
+    "response": {
+      "correct": true,
+      "reason": "The predicted edge correctly identifies that Elon Musk sued Sam Altman, the relationship type \"sued\" is appropriate, the supporting quote accurately appears in the article and directly supports the claim that Musk filed a lawsuit against Altman (along with Brockman) in 2024, and the direction (Musk -> Altman) is correct."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nPredicted edge: Elon Musk --[sued]--> Sam Altman\nExplanation: Musk filed a lawsuit against Altman and Brockman in 2024 based on his suspicions "
+  },
+  "817198f47259554af8561fe7e6b7ce6945b74498304b8fcb9774f30af2f52a0a": {
+    "response": {
+      "correct": false,
+      "reason": "The predicted edge claims Musk sued Greg Brockman specifically, but the supporting quote indicates Musk filed suit against both Altman and Brockman together (\"filed his suit\"), making the direction ambiguous and the relationship incompletely characterized\u2014the quote does not specifically establish a direct Musk-to-Brockman lawsuit relationship in isolation."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nPredicted edge: Elon Musk --[sued]--> Greg Brockman\nExplanation: Musk filed a lawsuit against Brockman and Altman in 2024 based on his suspicio"
+  },
+  "893452d5fab06e1d94d5f92bb1fc98734c201671510ad5723dec118a1624920d": {
+    "response": {
+      "correct": false,
+      "reason": "The supporting quote does not establish an employment relationship between Sam Altman and Greg Brockman\u2014it only mentions that Sam Altman is CEO and discusses ChatGPT strategy, which does not demonstrate that Altman employs Brockman."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/\nPredicted edge: Sam Altman --[employs]--> Greg Brockman\nExplanation: Sam Altman, as CEO, formally employs Greg Brockman,"
+  },
+  "8c8868ddb412cd54a81cf22d0afe2f73f768f406c1be60465bcf48e9379e42bb": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Julie Bort",
+          "is_author": true,
+          "role": "journalist",
+          "surface_form": "Julie Bort"
+        },
+        {
+          "canonical_hint": "Sam Altman",
+          "is_author": false,
+          "role": "OpenAI founder and CEO",
+          "surface_form": "Sam Altman"
+        },
+        {
+          "canonical_hint": "Greg Brockman",
+          "is_author": false,
+          "role": "OpenAI founder and president",
+          "surface_form": "Greg Brockman"
+        },
+        {
+          "canonical_hint": "Ilya Sutskever",
+          "is_author": false,
+          "role": "former OpenAI chief scientist",
+          "surface_form": "Ilya Sutskever"
+        },
+        {
+          "canonical_hint": "Adam D'Angelo",
+          "is_author": false,
+          "role": "OpenAI board member and Quora CEO",
+          "surface_form": "Adam D'Angelo"
+        },
+        {
+          "canonical_hint": "Elon Musk",
+          "is_author": false,
+          "role": null,
+          "surface_form": "Elon Musk"
+        },
+        {
+          "canonical_hint": "Rick Gerson",
+          "is_author": false,
+          "role": null,
+          "surface_form": "Rick Gerson"
+        },
+        {
+          "canonical_hint": "Eric Vishria",
+          "is_author": false,
+          "role": "Benchmark partner",
+          "surface_form": "Eric Vishria"
+        },
+        {
+          "canonical_hint": "Lior Susan",
+          "is_author": false,
+          "role": null,
+          "surface_form": "Lior Susan"
+        },
+        {
+          "canonical_hint": "Steve Vassallo",
+          "is_author": false,
+          "role": "Foundation Capital partner",
+          "surface_form": "Steve Vassallo"
+        },
+        {
+          "canonical_hint": "Andy Bechtolsheim",
+          "is_author": false,
+          "role": "Sun Microsystems and Arista co-founder",
+          "surface_form": "Andy Bechtolsheim"
+        },
+        {
+          "canonical_hint": "Lip-Bu Tan",
+          "is_author": false,
+          "role": "Intel CEO",
+          "surface_form": "Lip-Bu Tan"
+        }
+      ],
+      "relationships": [
+        {
+          "explanation": "Julie Bort is the article author reporting on Sam Altman and his involvement with Cerebras.",
+          "source": "Julie Bort",
+          "supporting_quote": "These include OpenAI founder and CEO Sam Altman, OpenAI founder and president Greg Brockman, former OpenAI chief scientist (now founder of his own AI startup) Ilya Sutskever, OpenAI board member and Quora CEO Adam D'Angelo",
+          "target": "Sam Altman",
+          "type": "reports_on"
+        },
+        {
+          "explanation": "Julie Bort is the article author reporting on Cerebras Systems and its IPO.",
+          "source": "Julie Bort",
+          "supporting_quote": "In the long-running saga that is Cerebras Systems' IPO, the finish line is finally in sight.",
+          "target": "Cerebras Systems",
+          "type": "reports_on"
+        },
+        {
+          "explanation": "Sam Altman is listed as an angel investor in Cerebras.",
+          "source": "Sam Altman",
+          "supporting_quote": "These include OpenAI founder and CEO Sam Altman",
+          "target": "Cerebras Systems",
+          "type": "invests_in"
+        },
+        {
+          "explanation": "Greg Brockman is listed as an angel investor in Cerebras.",
+          "source": "Greg Brockman",
+          "supporting_quote": "OpenAI founder and president Greg Brockman",
+          "target": "Cerebras Systems",
+          "type": "invests_in"
+        },
+        {
+          "explanation": "Ilya Sutskever is listed as an angel investor in Cerebras.",
+          "source": "Ilya Sutskever",
+          "supporting_quote": "former OpenAI chief scientist (now founder of his own AI startup) Ilya Sutskever",
+          "target": "Cerebras Systems",
+          "type": "invests_in"
+        },
+        {
+          "explanation": "Adam D'Angelo is listed as an angel investor in Cerebras.",
+          "source": "Adam D'Angelo",
+          "supporting_quote": "OpenAI board member and Quora CEO Adam D'Angelo",
+          "target": "Cerebras Systems",
+          "type": "invests_in"
+        },
+        {
+          "explanation": "Elon Musk is suing OpenAI and its executives, including Sam Altman, referencing Cerebras investments as evidence.",
+          "source": "Elon Musk",
+          "supporting_quote": "This relationship was even presented as evidence by Elon Musk in his lawsuit with OpenAI.",
+          "target": "Sam Altman",
+          "type": "sued"
+        }
+      ]
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/\nArticle title: OpenAI\u2019s cozy partner Cerebras is on track for a blockbuster IPO\nByline author(s): Julie Bort\n\nRelationship vocab"
+  },
+  "8c8beb9c977b490f4e6e07c9eadea04f382b7935dbbb240ede3152d255bd5a07": {
+    "response": {
+      "correct": false,
+      "reason": "The predicted edge is incorrect because the article indicates Elon Musk sued OpenAI and its co-founders (including Sam Altman), not Satya Nadella or Microsoft as the primary defendant, so the direction and target are wrong."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/\nPredicted edge: Elon Musk --[sued]--> Satya Nadella\nExplanation: Elon Musk's case includes allegations against Microsoft, "
+  },
+  "992416e8e780037d36f44b3c9430d798cbed9360d71b9872b9838db4cea2fcfc": {
+    "response": {
+      "correct": true,
+      "reason": "The relationship is correctly identified: the supporting quote explicitly mentions Elon Musk among those who made accusations against Altman of lying or misleading in the courtroom, which aligns with the \"criticizes\" relationship type."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/13/who-trusts-sam-altman/\nPredicted edge: Elon Musk --[criticizes]--> Sam Altman\nExplanation: Elon Musk brought accusations against Altman of lying and misleading in his lawsuit to shut down OpenAI's "
+  },
+  "9a2a97a9158a893f2818c49a295928a0f8b6e90487b3a89bfafbd6a21d2c89c2": {
+    "response": {
+      "correct": false,
+      "reason": "The relationship type \"partners_with\" does not match the article's description; Zilis acted as a mediator/go-between during a dispute, not as a partner, and the direction and nature of the relationship are not supported by the quote."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nPredicted edge: Shivon Zilis --[partners_with]--> Elon Musk\nExplanation: Shivon Zilis acted as a go-between for Musk and the OpenAI team during"
+  },
+  "9ae9b99a8d52bcf6866fcd2f9084b319a511e9d9c1232eb8e508043be33cfe4c": {
+    "response": {
+      "correct": false,
+      "reason": "The direction is incorrect: Elon Musk is suing OpenAI (the organization), not Greg Brockman individually as the target\u2014Greg Brockman is merely mentioned as someone Musk communicated with during the dispute, so the edge should be Elon Musk --[sued]--> OpenAI, not Greg Brockman."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/04/elon-musk-sent-ominous-texts-to-greg-brockman-sam-altman-after-asking-for-a-settlement-openai-claims/\nPredicted edge: Elon Musk --[sued]--> Greg Brockman\nExplanation: Elon Musk is suing OpenAI, and"
+  },
+  "a86840e84cadbfb25a6f761219affdfbeb5e269de66a628f535087988035239a": {
+    "response": {
+      "correct": false,
+      "reason": "The supporting quote is vague and does not appear to be a direct quotation from the article; the predicted edge requires verification that the article explicitly states Elon Musk sued Sam Altman specifically, with the quote clearly demonstrating this claim."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/\nPredicted edge: Elon Musk --[sued]--> Sam Altman\nExplanation: Elon Musk is suing OpenAI and its executives, including Sam Altman, re"
+  },
+  "a896e944b75cdbdfab785192c5deebd729501f5cc64dcbecc63e3a48f1a0e846": {
+    "response": {
+      "correct": false,
+      "reason": "The direction is backwards: Elon Musk employs Shivon Zilis (as his special adviser), not the other way around."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/\nPredicted edge: Shivon Zilis --[employs]--> Elon Musk\nExplanation: Shivon Zilis is listed as Elon Musk's special adviser.\n"
+  },
+  "aa642bbbb3752736f29ba28f3d3d9dca22e1d1676423afa75ab2bac29bee5772": {
+    "response": {
+      "correct": false,
+      "reason": "The predicted edge has the direction backwards\u2014it should be \"Greg Brockman --[describes]--> Elon Musk left OpenAI\" rather than \"Elon Musk left Greg Brockman,\" since the article is about Greg Brockman's account of Musk's departure from OpenAI, not about Musk leaving Brockman."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nPredicted edge: Elon Musk --[left]--> Greg Brockman\nExplanation: Elon Musk left OpenAI's board in February 2018 after the founders refused to g"
+  },
+  "ab39e9826f983eee573a81058ba78adf8ff67b8e1ef68b46935bb4f6ea5bb6d0": {
+    "response": {
+      "correct": true,
+      "reason": "The supporting quote demonstrates that Brockman and Sutskever worked together on a specific plan, which substantiates a partnership/collaborative relationship between them."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nPredicted edge: Greg Brockman --[partners_with]--> Ilya Sutskever\nExplanation: Brockman and Sutskever worked together to discuss a plan to remo"
+  },
+  "b164d947fe1d1d9794a9b2ab48890ffe6e7a063b9de6ffb0bd657c46ef02dfec": {
+    "response": {
+      "correct": true,
+      "reason": "The supporting quote directly states that Musk filed a lawsuit against Altman challenging OpenAI's corporate structure, which matches the predicted edge type \"sued\" and direction."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/\nPredicted edge: Elon Musk --[sued]--> Sam Altman\nExplanation: Elon Musk is suing Sam Altman challenging OpenAI's corporate structure.\nSu"
+  },
+  "c2fa4bb3ed3f81fe02c26251745ca3c1ad269ecb185a084fb79c2e4d812ae95d": {
+    "response": {
+      "correct": true,
+      "reason": "The relationship type matches: Brockman's testimony that Musk \"did not and does not know AI\" and dismissed early ChatGPT demonstrations is indeed a criticism of Musk's understanding, the supporting quote appears directly in the article, and the direction (Brockman \u2192 Musk) is correct."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nPredicted edge: Greg Brockman --[criticizes]--> Elon Musk\nExplanation: Brockman testified that Musk did not understand AI and dismissed early d"
+  },
+  "c565a3fe6cef387ec2fc48931e68ca05c3fa21884b655838b33480b8cd7b7ff8": {
+    "response": {
+      "correct": true,
+      "reason": "The supporting quote directly supports the relationship: Tim Fernholz (author) reports on Greg Brockman's testimony, and the quote mentions Brockman testified and provides insights into his experience, which aligns with the author reporting on Brockman's account."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/\nPredicted edge: Tim Fernholz --[reports_on]--> Greg Brockman\nExplanation: Tim Fernholz is the article author writing about Greg Brockman's test"
+  },
+  "c8b8381532c9ce317adab926eb5a353f7dbe611dd5d1d63dddeac88ffaa85067": {
+    "response": {
+      "correct": false,
+      "reason": "The direction is backwards: Sam Teller is employed by Elon Musk (works for him as chief of staff), not the other way around, so the edge should be Elon Musk --[employs]--> Sam Teller."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/\nPredicted edge: Sam Teller --[employs]--> Elon Musk\nExplanation: Sam Teller is Elon Musk's chief of staff.\nSupporting quot"
+  },
+  "d7136eb3a98948bb12b5979edf23c8470dc22b36f559a229c5b2ec0b3b056a58": {
+    "response": {
+      "correct": false,
+      "reason": "The direction is incorrect: while Brockman may oversee Simo's work during her absence, the \"employs\" relationship should flow from Simo (CEO) to Brockman, not the reverse, since Simo is Brockman's superior in the organizational hierarchy."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/\nPredicted edge: Greg Brockman --[employs]--> Fidji Simo\nExplanation: Greg Brockman, as president, is overseeing product "
+  },
+  "e020e65d00ef08dd007f47cea411603a6dfaadba81fb6b0eaefe260dd2bd73f9": {
+    "response": {
+      "correct": true,
+      "reason": "Julie Bort is a co-author of this TechCrunch article reporting on Elon Musk's actions and the OpenAI lawsuit, and the supporting quote accurately reflects the article's headline content about Musk sending texts."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/04/elon-musk-sent-ominous-texts-to-greg-brockman-sam-altman-after-asking-for-a-settlement-openai-claims/\nPredicted edge: Julie Bort --[reports_on]--> Elon Musk\nExplanation: Julie Bort is a co-byline a"
+  },
+  "e820393328c00cb1202db2d67f28becf6de360a3a4bc1ae11b93812a4a7d5a73": {
+    "response": {
+      "correct": false,
+      "reason": "The supporting quote shows Nadella criticized the board's decision (calling it \"amateur city\"), not praised Altman, making the relationship type fundamentally incorrect."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/13/who-trusts-sam-altman/\nPredicted edge: Satya Nadella --[praises]--> Sam Altman\nExplanation: Satya Nadella, Microsoft CEO, called Altman's firing 'amateur city,' implying criticism of the board's de"
+  },
+  "e85a119bd39ff9ddb4f3530a0db0a8d5c247b1c7deb72ce1cb837273879e2bf3": {
+    "response": {
+      "correct": true,
+      "reason": "The relationship type \"praises\" accurately reflects Taylor's positive testimony about Altman's integrity and transparency, the supporting quote directly appears in the article and supports the claim, and the direction is correct (Taylor expressing approval of Altman)."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/13/who-trusts-sam-altman/\nPredicted edge: Bret Taylor --[praises]--> Sam Altman\nExplanation: Bret Taylor, chair of OpenAI's board, testified that Altman has been forthright with him and found nothing "
+  },
+  "eb722b0511d5680c00ca1217d978d44c85e6e8eb982e71b750c37f9433c25208": {
+    "response": {
+      "correct": true,
+      "reason": "The predicted edge is correct: Helen Toner does criticize Sam Altman in the article by testifying that he misled her, and the supporting quote directly supports this claim by indicating her testimony about being misled."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/13/who-trusts-sam-altman/\nPredicted edge: Helen Toner --[criticizes]--> Sam Altman\nExplanation: Helen Toner, a former OpenAI board member, testified under oath accusing Altman of misleading her.\nSuppo"
+  },
+  "ee0ac2ae04487c579f212aa38a34f5d2a28a4fb43e91ef757b1e71e90bfdce66": {
+    "response": {
+      "correct": true,
+      "reason": "The supporting quote shows Altman directly criticizing Musk's management approach and understanding of research lab operations, which matches the \"criticizes\" relationship type and the direction is correct (Altman \u2192 Musk)."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/\nPredicted edge: Sam Altman --[criticizes]--> Elon Musk\nExplanation: Altman testified that Musk's management tactics were problematic and"
+  },
+  "f45a9539fdd71b53c4658a48d5df4c7b30a4654fc8a19094e29f17cd7acf9855": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Elon Musk",
+          "is_author": false,
+          "role": "co-founder of OpenAI, plaintiff",
+          "surface_form": "Elon Musk"
+        },
+        {
+          "canonical_hint": "Sam Altman",
+          "is_author": false,
+          "role": "co-founder of OpenAI",
+          "surface_form": "Sam Altman"
+        },
+        {
+          "canonical_hint": "Greg Brockman",
+          "is_author": false,
+          "role": "co-founder of OpenAI",
+          "surface_form": "Greg Brockman"
+        },
+        {
+          "canonical_hint": "Jared Birchall",
+          "is_author": false,
+          "role": "financial adviser to Elon Musk",
+          "surface_form": "Jared Birchall"
+        },
+        {
+          "canonical_hint": "Sam Teller",
+          "is_author": false,
+          "role": "chief of staff to Elon Musk",
+          "surface_form": "Sam Teller"
+        },
+        {
+          "canonical_hint": "Shivon Zilis",
+          "is_author": false,
+          "role": "special adviser to Elon Musk, OpenAI board member",
+          "surface_form": "Shivon Zilis"
+        },
+        {
+          "canonical_hint": "Ilya Sutskever",
+          "is_author": false,
+          "role": "co-founder/executive at OpenAI",
+          "surface_form": "Ilya Sutskever"
+        },
+        {
+          "canonical_hint": "Satya Nadella",
+          "is_author": false,
+          "role": "CEO of Microsoft",
+          "surface_form": "Satya Nadella"
+        },
+        {
+          "canonical_hint": "Bill Savitt",
+          "is_author": false,
+          "role": "lead attorney for OpenAI",
+          "surface_form": "Bill Savitt"
+        },
+        {
+          "canonical_hint": "Tim Fernholz",
+          "is_author": true,
+          "role": "journalist",
+          "surface_form": "Tim Fernholz"
+        }
+      ],
+      "relationships": [
+        {
+          "explanation": "Tim Fernholz is the article author writing about Elon Musk's lawsuit case.",
+          "source": "Tim Fernholz",
+          "supporting_quote": "What the jury will actually decide in the case of Elon Musk vs. Sam Altman",
+          "target": "Elon Musk",
+          "type": "reports_on"
+        },
+        {
+          "explanation": "Elon Musk is suing Sam Altman and other OpenAI co-founders.",
+          "source": "Elon Musk",
+          "supporting_quote": "Elon Musk's case against OpenAI's other co-founders",
+          "target": "Sam Altman",
+          "type": "sued"
+        },
+        {
+          "explanation": "Elon Musk is suing Greg Brockman as one of OpenAI's co-founders.",
+          "source": "Elon Musk",
+          "supporting_quote": "Elon Musk's case against OpenAI's other co-founders and Microsoft",
+          "target": "Greg Brockman",
+          "type": "sued"
+        },
+        {
+          "explanation": "Elon Musk's case includes allegations against Microsoft, led by Satya Nadella.",
+          "source": "Elon Musk",
+          "supporting_quote": "Elon Musk's case against OpenAI's other co-founders and Microsoft",
+          "target": "Satya Nadella",
+          "type": "sued"
+        },
+        {
+          "explanation": "Shivon Zilis is listed as Elon Musk's special adviser.",
+          "source": "Shivon Zilis",
+          "supporting_quote": "his special adviser Shivon Zilis",
+          "target": "Elon Musk",
+          "type": "employs"
+        },
+        {
+          "explanation": "Jared Birchall is Elon Musk's financial adviser.",
+          "source": "Jared Birchall",
+          "supporting_quote": "his financial adviser Jared Birchall",
+          "target": "Elon Musk",
+          "type": "employs"
+        },
+        {
+          "explanation": "Sam Teller is Elon Musk's chief of staff.",
+          "source": "Sam Teller",
+          "supporting_quote": "his chief of staff Sam Teller",
+          "target": "Elon Musk",
+          "type": "employs"
+        }
+      ]
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/\nArticle title: What the jury will actually decide in the case of Elon Musk vs. Sam Altman\nByline author(s): Tim Fernho"
+  },
+  "f74f1fd0dcd07723f6c819b4853f9d225271bdca94a5a2a66079b5fa3f2d3ef2": {
+    "response": {
+      "people": [
+        {
+          "canonical_hint": "Elon Musk",
+          "is_author": false,
+          "role": null,
+          "surface_form": "Elon Musk"
+        },
+        {
+          "canonical_hint": "Greg Brockman",
+          "is_author": false,
+          "role": "president and co-founder of OpenAI",
+          "surface_form": "Greg Brockman"
+        },
+        {
+          "canonical_hint": "Sam Altman",
+          "is_author": false,
+          "role": "co-founder of OpenAI",
+          "surface_form": "Sam Altman"
+        },
+        {
+          "canonical_hint": "Tim Fernholz",
+          "is_author": true,
+          "role": "reporter",
+          "surface_form": "Tim Fernholz"
+        },
+        {
+          "canonical_hint": "Julie Bort",
+          "is_author": true,
+          "role": "reporter",
+          "surface_form": "Julie Bort"
+        }
+      ],
+      "relationships": [
+        {
+          "explanation": "Elon Musk is suing OpenAI, and specifically texted Greg Brockman as part of the lawsuit dispute.",
+          "source": "Elon Musk",
+          "supporting_quote": "Two days before the Elon Musk vs. OpenAI trial began last week, Musk texted the model maker's president and co-founder Greg Brockman.",
+          "target": "Greg Brockman",
+          "type": "sued"
+        },
+        {
+          "explanation": "Elon Musk's lawsuit targets Sam Altman as a co-founder of OpenAI, with Musk sending threatening messages toward him.",
+          "source": "Elon Musk",
+          "supporting_quote": "After Brockman replied by suggesting both sides drop their suits, the exchange went off the rails, with Musk responding: \"By the end of this week, you and Sam will be the most hated men in America.\"",
+          "target": "Sam Altman",
+          "type": "sued"
+        },
+        {
+          "explanation": "Tim Fernholz is a reporter covering the trial involving Elon Musk.",
+          "source": "Tim Fernholz",
+          "supporting_quote": "per TechCrunch reporter Tim Fernholz, who is on-site covering the trial",
+          "target": "Elon Musk",
+          "type": "reports_on"
+        },
+        {
+          "explanation": "Julie Bort is a co-byline author of this article reporting on Elon Musk and the lawsuit.",
+          "source": "Julie Bort",
+          "supporting_quote": "Elon Musk sent ominous texts to Greg Brockman, Sam Altman after asking for a settlement, OpenAI claims",
+          "target": "Elon Musk",
+          "type": "reports_on"
+        }
+      ]
+    },
+    "tool": "submit_extraction",
+    "user_preview": "Article URL: https://techcrunch.com/2026/05/04/elon-musk-sent-ominous-texts-to-greg-brockman-sam-altman-after-asking-for-a-settlement-openai-claims/\nArticle title: Elon Musk sent ominous texts to Greg Brockman, Sam Altman after asking for a"
+  },
+  "fa92c48a2319f6e60ae4f9c7c786ecbacaf02f11512c8a248f8dbf8f8fa6d6bf": {
+    "response": {
+      "correct": false,
+      "reason": "The relationship direction is reversed: Elon Musk employs Jared Birchall as his financial adviser, not the other way around."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/\nPredicted edge: Jared Birchall --[employs]--> Elon Musk\nExplanation: Jared Birchall is Elon Musk's financial adviser.\nSupp"
+  },
+  "fcbb9d47ca4161f3063067a5efa070bc987aa6038c746d445057e983c4933e20": {
+    "response": {
+      "correct": true,
+      "reason": "The article supports that Elon Musk sued Sam Altman (along with others at OpenAI), and the supporting quote demonstrates Musk directing hostile language at Altman as a target of his legal action."
+    },
+    "tool": "judge_edge",
+    "user_preview": "Article: https://techcrunch.com/2026/05/04/elon-musk-sent-ominous-texts-to-greg-brockman-sam-altman-after-asking-for-a-settlement-openai-claims/\nPredicted edge: Elon Musk --[sued]--> Sam Altman\nExplanation: Elon Musk's lawsuit targets Sam A"
+  }
+}

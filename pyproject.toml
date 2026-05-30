@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "newsgraph"
+version = "0.1.0"
+description = "Scrape TechCrunch, extract people + relationships with an LLM, store as a knowledge graph, serve over HTTP."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.115.5",
+    "uvicorn[standard]==0.32.1",
+    "httpx==0.27.2",
+    "beautifulsoup4==4.12.3",
+    "lxml==5.3.0",
+    "pydantic==2.9.2",
+    "pydantic-settings==2.6.1",
+    "anthropic==0.39.0",
+    "tenacity==9.0.0",
+    "python-dateutil==2.9.0.post0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.3",
+    "pytest-asyncio==0.24.0",
+]
+# Optional second LLM backend. Install with `pip install -e ".[openai]"` and set
+# NEWSGRAPH_LLM_PROVIDER=openai + NEWSGRAPH_OPENAI_API_KEY to use it.
+openai = [
+    "openai==1.54.4",
+]
+
+[project.scripts]
+newsgraph = "newsgraph.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# schema.sql is read at runtime by db/repository.py via __file__, so it must ship
+# inside the wheel — otherwise a non-editable `pip install .` (Docker / Render)
+# starts up and then dies on the first DB init. Editable installs hide this
+# because they leave the source tree in place.
+[tool.setuptools.package-data]
+newsgraph = ["db/schema.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-q"

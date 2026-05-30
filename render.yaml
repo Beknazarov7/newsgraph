@@ -1,0 +1,27 @@
+# Render.com blueprint — one-click deploy of the newsgraph API.
+# Docs: https://render.com/docs/blueprint-spec
+#
+# After connecting the repo on render.com, set NEWSGRAPH_ANTHROPIC_API_KEY in the
+# dashboard (it's marked sync:false so it's never committed). A 1 GB persistent
+# disk holds the SQLite DB and the on-disk HTML cache so data survives deploys.
+services:
+  - type: web
+    name: newsgraph
+    runtime: python
+    plan: free
+    buildCommand: pip install .
+    startCommand: uvicorn newsgraph.api.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: NEWSGRAPH_ANTHROPIC_API_KEY
+        sync: false
+      - key: NEWSGRAPH_DB_PATH
+        value: /data/newsgraph.sqlite3
+      - key: NEWSGRAPH_CACHE_DIR
+        value: /data/cache
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+    disk:
+      name: newsgraph-data
+      mountPath: /data
+      sizeGB: 1

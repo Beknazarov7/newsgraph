@@ -1,0 +1,147 @@
+[
+  {
+    "url": "https://techcrunch.com/2026/05/13/who-trusts-sam-altman/",
+    "title": "Who trusts Sam Altman?",
+    "fixture": "tests/fixtures/techcrunch_article_who_trusts_sam_altman.html",
+    "people": [
+      {"canonical": "Sam Altman",            "aliases": ["Sam Altman", "Altman"]},
+      {"canonical": "Tim Fernholz",          "aliases": ["Tim Fernholz"]},
+      {"canonical": "John Kennedy",          "aliases": ["John Kennedy", "Senator John Kennedy", "Kennedy"]},
+      {"canonical": "Steve Molo",            "aliases": ["Steve Molo", "Molo"]},
+      {"canonical": "Elon Musk",             "aliases": ["Elon Musk", "Musk"]},
+      {"canonical": "Yvonne Gonzalez Rogers", "aliases": ["Yvonne Gonzalez Rogers", "Judge Yvonne Gonzalez Rogers"]}
+    ],
+    "edges": [
+      {"source": "Tim Fernholz", "target": "Sam Altman", "type": "reports_on", "quote_contains": "Altman"},
+      {"source": "Elon Musk",    "target": "Sam Altman", "type": "sued",       "quote_contains": "Musk"},
+      {"source": "Steve Molo",   "target": "Sam Altman", "type": "criticizes", "quote_contains": "Molo"}
+    ]
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/04/elon-musk-sent-ominous-texts-to-greg-brockman-sam-altman-after-asking-for-a-settlement-openai-claims/",
+    "title": "Elon Musk sent ominous texts to Greg Brockman, Sam Altman after asking for a settlement, OpenAI claims",
+    "fixture": "tests/fixtures/techcrunch_article_musk_brockman_texts.html",
+    "people": [
+      {"canonical": "Elon Musk",     "aliases": ["Elon Musk", "Musk"]},
+      {"canonical": "Greg Brockman", "aliases": ["Greg Brockman", "Brockman"]},
+      {"canonical": "Sam Altman",    "aliases": ["Sam Altman", "Sam"]},
+      {"canonical": "Julie Bort",    "aliases": ["Julie Bort"]},
+      {"canonical": "Tim Fernholz",  "aliases": ["Tim Fernholz"]}
+    ],
+    "edges": [
+      {"source": "Julie Bort",    "target": "Elon Musk",     "type": "reports_on", "quote_contains": "Musk"},
+      {"source": "Tim Fernholz",  "target": "Elon Musk",     "type": "reports_on", "quote_contains": "Fernholz"},
+      {"source": "Elon Musk",     "target": "Greg Brockman", "type": "criticizes", "quote_contains": "most hated men"},
+      {"source": "Elon Musk",     "target": "Sam Altman",    "type": "criticizes", "quote_contains": "most hated men"},
+      {"source": "Elon Musk",     "target": "Greg Brockman", "type": "sued",       "quote_contains": "lawsuit"}
+    ]
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/",
+    "title": "OpenAI co-founder Greg Brockman takes charge of product strategy",
+    "fixture": "tests/fixtures/techcrunch_article_brockman_product.html",
+    "people": [
+      {"canonical": "Greg Brockman", "aliases": ["Greg Brockman", "Brockman"]},
+      {"canonical": "Sam Altman",    "aliases": ["Sam Altman"]},
+      {"canonical": "Fidji Simo",    "aliases": ["Fidji Simo", "Simo"]},
+      {"canonical": "Anthony Ha",    "aliases": ["Anthony Ha"]}
+    ],
+    "edges": [
+      {"source": "Anthony Ha",    "target": "Greg Brockman", "type": "reports_on", "quote_contains": "Brockman"},
+      {"source": "Greg Brockman", "target": "Fidji Simo",    "type": "succeeds",   "quote_contains": "Simo"}
+    ]
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman/",
+    "title": "How Elon Musk left OpenAI, according to Greg Brockman",
+    "people": [
+      {"canonical": "Elon Musk",       "aliases": ["Elon Musk", "Musk"]},
+      {"canonical": "Greg Brockman",   "aliases": ["Greg Brockman", "Brockman"]},
+      {"canonical": "Sam Altman",      "aliases": ["Sam Altman", "Altman"]},
+      {"canonical": "Ilya Sutskever",  "aliases": ["Ilya Sutskever", "Sutskever"]},
+      {"canonical": "Tim Fernholz",    "aliases": ["Tim Fernholz"]}
+    ],
+    "edges": [
+      {"source": "Tim Fernholz",  "target": "Elon Musk",     "type": "reports_on", "quote_contains": "Musk"},
+      {"source": "Elon Musk",     "target": "Sam Altman",    "type": "criticizes", "quote_contains": "control"},
+      {"source": "Greg Brockman", "target": "Elon Musk",     "type": "left",       "quote_contains": "leave"}
+    ]
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/",
+    "title": "Musk mulled handing OpenAI to his children, Altman testifies",
+    "people": [
+      {"canonical": "Sam Altman",   "aliases": ["Sam Altman", "Altman"]},
+      {"canonical": "Elon Musk",    "aliases": ["Elon Musk", "Musk"]},
+      {"canonical": "Bret Taylor",  "aliases": ["Bret Taylor"]},
+      {"canonical": "Tim Fernholz", "aliases": ["Tim Fernholz"]}
+    ],
+    "edges": [
+      {"source": "Tim Fernholz", "target": "Sam Altman",  "type": "reports_on", "quote_contains": "Altman"},
+      {"source": "Sam Altman",   "target": "Elon Musk",   "type": "criticizes", "quote_contains": "safety"},
+      {"source": "Elon Musk",    "target": "Sam Altman",  "type": "sued",       "quote_contains": "lawsuit"}
+    ]
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/",
+    "title": "Anthropic now has more business customers than OpenAI, according to Ramp data",
+    "people": [
+      {"canonical": "Russell Brandom",  "aliases": ["Russell Brandom"]},
+      {"canonical": "Ara Kharazian",    "aliases": ["Ara Kharazian", "Kharazian"]}
+    ],
+    "edges": [
+      {"source": "Russell Brandom", "target": "Ara Kharazian", "type": "reports_on", "quote_contains": "Kharazian"}
+    ]
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/",
+    "title": "OpenAI’s cozy partner Cerebras is on track for a blockbuster IPO",
+    "people": [
+      {"canonical": "Julie Bort",     "aliases": ["Julie Bort"]},
+      {"canonical": "Sam Altman",     "aliases": ["Sam Altman"]},
+      {"canonical": "Rick Gerson",    "aliases": ["Rick Gerson"]},
+      {"canonical": "Eric Vishria",   "aliases": ["Eric Vishria"]},
+      {"canonical": "Lior Susan",     "aliases": ["Lior Susan"]},
+      {"canonical": "Steve Vassallo", "aliases": ["Steve Vassallo"]}
+    ],
+    "edges": [
+      {"source": "Julie Bort", "target": "Sam Altman", "type": "reports_on", "quote_contains": "Altman"}
+    ]
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/",
+    "title": "What the jury will actually decide in the case of Elon Musk vs. Sam Altman",
+    "people": [
+      {"canonical": "Sam Altman",     "aliases": ["Sam Altman", "Altman"]},
+      {"canonical": "Elon Musk",      "aliases": ["Elon Musk", "Musk"]},
+      {"canonical": "Greg Brockman",  "aliases": ["Greg Brockman", "Brockman"]},
+      {"canonical": "Tim Fernholz",   "aliases": ["Tim Fernholz"]}
+    ],
+    "edges": [
+      {"source": "Tim Fernholz", "target": "Elon Musk",     "type": "reports_on", "quote_contains": "Musk"},
+      {"source": "Elon Musk",    "target": "Sam Altman",    "type": "sued",       "quote_contains": "lawsuit"},
+      {"source": "Elon Musk",    "target": "Greg Brockman", "type": "sued",       "quote_contains": "co-founders"}
+    ]
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+    "title": "OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT",
+    "people": [
+      {"canonical": "Ivan Mehta", "aliases": ["Ivan Mehta"]}
+    ],
+    "edges": []
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/20/sam-altman-makes-mic-drop-offer-to-every-y-combinator-startup/",
+    "title": "Sam Altman makes ‘mic drop’ offer to every Y Combinator startup",
+    "people": [
+      {"canonical": "Sam Altman",      "aliases": ["Sam Altman", "Altman"]},
+      {"canonical": "Tyler Bosmeny",   "aliases": ["Tyler Bosmeny"]},
+      {"canonical": "Jared Friedman",  "aliases": ["Jared Friedman"]},
+      {"canonical": "Julie Bort",      "aliases": ["Julie Bort"]}
+    ],
+    "edges": [
+      {"source": "Julie Bort", "target": "Sam Altman", "type": "reports_on", "quote_contains": "Altman"}
+    ]
+  }
+]
